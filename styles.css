@@ -1,0 +1,143 @@
+/* These CSS rules apply to the <html>, <body>, and <div id="app"> HTML elements in index.html */
+html, body, #app {
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Continue building out the CSS styling for your Twiddler app below! We got you started by
+providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
+
+body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+
+#app {
+
+  background-image: url('assets/img/mainBackground.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.title {
+  font-family: 'Hachi Maru Pop', cursive !important;
+  color: #e0af54;
+  font-size: 96px;
+  width: inherit;
+  text-align:left;
+  padding-left: 50px;
+}
+#feed {
+  background: #88bdc3f3;
+  height: 600px;
+  width: 60%;
+  border: 3px solid #e0af54;
+  border-radius: 20px;
+  position:relative ;
+  overflow: auto;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 24px;
+}
+.tweet {
+  background: papayawhip;
+
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  display:flex;
+  position: relative;
+  border: 1px solid #e0af54;
+  border-radius: 20px;
+  font-family: 'Kaisei HarunoUmi', serif !important;
+
+}
+.column1 {
+  width:20%;
+  min-width:150px;
+  height:100%;
+  overflow: hidden;
+
+}
+.column1 > img {
+  display: block;
+  margin: 0 auto;
+  margin: 5px;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  margin: 10px auto;
+  }
+.column1 > .username {
+  width:100%;
+  display:block;
+  text-align:center;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.username:hover {
+ color: #e0af54
+}
+
+.column2 {
+  width: 60%;
+  background: papayawhip;
+  height:100%;
+  padding: 10px;
+  text-align:left;
+  margin-top:20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.column3 {
+  width: 20%;
+}
+
+.row1 {
+  height: 80%;
+  width: 100%;
+}
+.row2 {
+  height: 20%;
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  height:auto;
+  font-family:sans-serif;
+  font-style: italic;
+  font-size:16px;
+}
+
+#update-feed {
+  height: 40px;
+  width: 100px;
+  margin-block-start: auto;
+  margin-bottom: 50px;
+  background: #9dced3c4;
+  color: papayawhip;
+  border-color: #e0af54;
+  border-radius: 30px;
+}
+
+.icon {
+  color: #e0af54;
+}
+.icon:hover {
+  color: #88bdc3c4;
+}
+.iconContainer{
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-areas: '.comment .retweet .like .share';
+  grid-auto-columns: max-content;
+}
+
